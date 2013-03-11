@@ -41,6 +41,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${studentInstance?.enrolledClasses}">
+				<li class="fieldcontain">
+					<span id="enrolledClasses-label" class="property-label"><g:message code="student.enrolledClasses.label" default="Enrolled Classes" /></span>
+					
+						<g:each in="${studentInstance.enrolledClasses}" var="e">
+						<span class="property-value" aria-labelledby="enrolledClasses-label"><g:link controller="registerEntry" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

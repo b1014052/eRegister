@@ -23,6 +23,44 @@
 			</g:if>
 			<ol class="property-list regClass">
 			
+				<g:if test="${regClassInstance?.name}">
+				<li class="fieldcontain">
+					<span id="name-label" class="property-label"><g:message code="regClass.name.label" default="Name" /></span>
+					
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${regClassInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${regClassInstance?.classInstructor}">
+				<li class="fieldcontain">
+					<span id="classInstructor-label" class="property-label"><g:message code="regClass.classInstructor.label" default="Class Instructor" /></span>
+					
+						<span class="property-value" aria-labelledby="classInstructor-label"><g:link controller="instructor" action="show" id="${regClassInstance?.classInstructor?.id}">${regClassInstance?.classInstructor?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${regClassInstance?.course}">
+				<li class="fieldcontain">
+					<span id="course-label" class="property-label"><g:message code="regClass.course.label" default="Course" /></span>
+					
+						<span class="property-value" aria-labelledby="course-label"><g:link controller="course" action="show" id="${regClassInstance?.course?.id}">${regClassInstance?.course?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${regClassInstance?.studentEnrolled}">
+				<li class="fieldcontain">
+					<span id="studentEnrolled-label" class="property-label"><g:message code="regClass.studentEnrolled.label" default="Student Enrolled" /></span>
+					
+						<g:each in="${regClassInstance.studentEnrolled}" var="s">
+						<span class="property-value" aria-labelledby="studentEnrolled-label"><g:link controller="enrollment" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
