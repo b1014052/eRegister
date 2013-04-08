@@ -6,14 +6,14 @@
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #CFF;
-				border: .2em solid #0CF;
+				border: .2em solid #099;
 				margin: 2em 2em 1em;
 				padding: 1em;
 				width: 12em ;
 				float: left;
-				-moz-box-shadow: 0px 0px 1.25em #FFC;
-				-webkit-box-shadow: 0px 0px 1.25em #FFC;
-				box-shadow: 0px 0px 1.25em #FFC;
+				-moz-box-shadow: 0px 0px 1.25em #fff;
+				-webkit-box-shadow: 0px 0px 1.25em #fff;
+				box-shadow: 0px 0px 1.25em #fff;
 				-moz-border-radius: 0.6em;
 				-webkit-border-radius: 0.6em;
 				border-radius: 0.6em;

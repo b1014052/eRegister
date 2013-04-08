@@ -2,6 +2,30 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'courseName', 'error')} required">
+	<label for="courseName">
+		<g:message code="course.courseName.label" default="Course Name" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="courseName" required="" value="${courseInstance?.courseName}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'courseCode', 'error')} required">
+	<label for="courseCode">
+		<g:message code="course.courseCode.label" default="Course Code" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="courseCode" required="" value="${courseInstance?.courseCode}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'description', 'error')} required">
+	<label for="description">
+		<g:message code="course.description.label" default="Description" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="description" required="" value="${courseInstance?.description}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'classes', 'error')} ">
 	<label for="classes">
 		<g:message code="course.classes.label" default="Classes" />

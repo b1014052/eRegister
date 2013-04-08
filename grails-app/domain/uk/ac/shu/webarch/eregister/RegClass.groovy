@@ -18,8 +18,8 @@ static mappedBy = [studentEnrolled: 'classes']
 name(nullable:false, blank:false,maxsize:256);
 }
 static mapping = {
-classInstructor column 'instructor_fk'
-course column 'Course_fk'
+classInstructor column: 'instructor_fk'
+course column: 'Course_fk'
 
     
 }
