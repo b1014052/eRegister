@@ -36,7 +36,7 @@
 				<li class="fieldcontain">
 					<span id="classes-label" class="property-label"><g:message code="registrationSheet.classes.label" default="Classes" /></span>
 					
-						<span class="property-value" aria-labelledby="classes-label"><g:link controller="regClass" action="show" id="${registrationSheetInstance?.classes?.id}">${registrationSheetInstance?.classes?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="classes-label"><g:link controller="regClass" action="show" id="${registrationSheetInstance?.classes?.id}">${registrationSheetInstance?.classes?.name}</g:link></span>
 					
 				</li>
 				</g:if>
