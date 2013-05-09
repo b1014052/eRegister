@@ -24,4 +24,4 @@ When the link appears, click on it and it will take you to my eRegister applicat
 By clicking on the headers on the home page you can access defferent parts of the application
 There should already be data stored in there but you can also add and delete students/instructors/classes/courses etc...
 
-Further information about my project is on my written report also included in the zipped folder I submitted.
+Further information about my project is on my written report I have submitted.
